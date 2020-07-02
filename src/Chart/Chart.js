@@ -20,8 +20,6 @@ const ChartComponent = () => {
     }
 
     useEffect(() => {
-        console.log(chart)
-
         var ctx =  chart.current.getContext('2d');
 
         new Chart( ctx , {
