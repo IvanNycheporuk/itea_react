@@ -23,5 +23,5 @@
   border: none;
 }
 .togglerItem.active{
-  background: #ffcc00;
+  background: #ffcc00!important;
 }

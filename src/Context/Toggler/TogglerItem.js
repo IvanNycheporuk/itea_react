@@ -5,10 +5,14 @@ import { ThemeContext } from '../theme-context';
 
 const TogglerItem = ({ name, action, active }) => {
     const theme = useContext( ThemeContext );
-    console.log(theme);
+
     return (
         <button 
             className={active ? 'togglerItem active' : 'togglerItem'}
+            style={{
+                color: theme.color,
+                background: theme.background
+            }}
             onClick={ action( name) }>
             { name }
         </button>
