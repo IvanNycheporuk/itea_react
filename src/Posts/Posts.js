@@ -13,7 +13,7 @@ const Posts = ({
     addCounter, getData
 }) => {
 
-    let [postsToShow, showMorePosts] = useState(2);
+    let [postsToShow, showMorePosts] = useState(10);
 
     useEffect(() => {
         getData();
@@ -22,7 +22,7 @@ const Posts = ({
     let { path, url } = useRouteMatch();
 
     const showMorePostsHandler = () => {
-        showMorePosts(postsToShow += 2)
+        showMorePosts(postsToShow += 5)
     }
 
     return (
